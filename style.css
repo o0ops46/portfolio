@@ -220,21 +220,62 @@ hr {
   width: 200px;
   height: 100px;
 }
-#contact {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+
+#contact > h2 {
+  font-size: 38px;
+  margin-top: 100px;
+  text-align: center;
 }
-.contact_me {
+.info {
   display: flex;
   flex-direction: column;
+}
+.info h3,
+.get_in_touch h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.info i,
+label,
+input {
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input {
+  width: 255px;
 }
 .get_in_touch {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid red;
+  width: 255px;
 }
-#contact h2 {
-  font-size: 38px;
-  text-align: center;
+#contact_me {
+  display: flex;
+  font-size: 20px;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.send_message {
+  width: 260px;
+  height: 30px;
+  background: #14213d;
+  border: 2px solid white;
+  color: white;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 600px) {
+  #contact_me {
+    display: flex;
+    font-size: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  .get_in_touch {
+    margin-top: 50px;
+  }
+  input {
+    width: 245px;
+  }
+  #profile {
+    width: 100%;
+  }
 }
